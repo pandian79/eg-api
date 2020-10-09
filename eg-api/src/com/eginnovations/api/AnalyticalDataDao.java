@@ -71,10 +71,8 @@ public class AnalyticalDataDao {
 	    
 	    String qry = sb.toString();
 	    sb = null;
-//	    String qry = "select * from user_info";
 	    logger.info("qry:"+qry);
 		requestBodyJsonObject.put("query", qry);
-//	    requestBodyJsonObject.put("query", "select * from user_info");
 	    
 	    HttpEntity<String> request = 
 		  	      new HttpEntity<String>(requestBodyJsonObject.toString(), headers);
